@@ -1,6 +1,8 @@
 # Simple Staking DeFi App
 This repo contains the smart contracts to create a Staking contracts factory. The factory is able to deploy staking contracts with two given tokens as staking and rewards tokens but also it's capable of deploying a contract with its own new created tokens.
 
+The repo is based on Staking contract from [Smart Contracts Programmer](https://www.youtube.com/watch?v=OJ-IRzCYSXI&ab_channel=SmartContractProgrammer)
+
 ## Development
 
 requires
