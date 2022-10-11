@@ -119,4 +119,8 @@ contract Staking is Ownable{
     function _min(uint x, uint y) private pure returns (uint) {
         return x <= y ? x : y;
     }
+
+    function transferOwnership(address newOwner) public override(Ownable) onlyOwner {
+        super.transferOwnership(newOwner);
+    }
 }

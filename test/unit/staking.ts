@@ -32,7 +32,6 @@ describe("Contract: Staking", function () {
     stakingToken = setup.tokens.stakingToken;
     rewardsToken = setup.tokens.rewardsToken;
     stakingContract = await init.getContractInstance("Staking", owner, [stakingToken.address, rewardsToken.address]);
-
   })
 
   context("Deployment", function () {

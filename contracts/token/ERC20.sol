@@ -6,9 +6,13 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract CustomToken is ERC20, Ownable {
 
-    constructor(string memory _tokenName, string memory _tokenSymbol ) ERC20(_tokenName, _tokenSymbol) {}
+    constructor(string memory _tokenName, string memory _tokenSymbol) ERC20(_tokenName, _tokenSymbol) {}
 
     function mintTokens(uint _amount, address _to) external onlyOwner {
         super._mint(_to,_amount);
+    }
+
+    function transferOwnership(address newOwner) public override(Ownable) onlyOwner {
+        super.transferOwnership(newOwner);
     }
 }
