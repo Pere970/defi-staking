@@ -46,7 +46,7 @@ touch .env
 and add the following
 
 ```
-ALCHEMY_KEY = infura key
+ALCHEMY_KEY = alchemy key
 MNEMONIC = mnemonic (choose our development mnemonic to be able to interact with the deployed contracts with the deployer address)
 PK = private-key
 ```
